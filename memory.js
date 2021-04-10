@@ -3,7 +3,7 @@ var images = [];
 // get images, place them in an array & randomize the order
 for (var i = 0; i < 8; i++) { 
   var rand = Math.floor(Math.random() * (1200 - 900 + 1) + 900); 
-  var img = 'http://lolcat.com/images/lolcats/' + rand + '.jpg';
+  var img = 'images' + rand + '.jpg';
   images.push(img);
   images.push(img);
 }
