@@ -49,8 +49,8 @@ const clickCard = function () {
                
                 if (gameResult == gameLength) {
                     const endTime = new Date().getTime();
-                    const gameTime = (endTime - startTime) / 1000
-                    alert(`UdaĹo siÄ! TwĂłj wynik to: ${gameTime} sekund`)
+                    const gameTime = (endTime - startTime) / 150
+                    alert(`Udało się! Twój wynik to: ${gameTime} sekund`)
                     location.reload();
                 }
             }
@@ -58,6 +58,7 @@ const clickCard = function () {
             else {
                 console.log("przegrana")
                 activeCards.forEach(card => card.classList.add("hidden"))
+                alert(`Czas upłynął, przegrana !`)
             }
            
             activeCard = ""; 
